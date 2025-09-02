@@ -28,3 +28,8 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
+
+
+module.exports = {
+  pathPrefix: "/eleventy_demo/"
+};
