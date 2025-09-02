@@ -2,6 +2,10 @@ const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 
+module.exports = {
+  pathPrefix: "/eleventy_demo/"
+};
+
 module.exports = function(eleventyConfig) {
   // Copy images
   eleventyConfig.addPassthroughCopy("images");
@@ -30,6 +34,3 @@ module.exports = function(eleventyConfig) {
 };
 
 
-module.exports = {
-  pathPrefix: "/eleventy_demo/"
-};
