@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
+    "build": "npx eleventy",
     "serve": "eleventy --serve"
   },
   "keywords": [],
