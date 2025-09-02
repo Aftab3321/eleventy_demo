@@ -12,4 +12,4 @@ This is the **content** of my second blog post.
 
 You can also include inline images:
 
-![Example](/images/something.jpg){.custom-image}
+![Example](./images/something.jpg){.custom-image}

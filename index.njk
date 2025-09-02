@@ -10,11 +10,11 @@ title: "Home"
   <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm">
       {% if post.data.featured %}
-        <img src="{{ post.data.featured }}" class="card-img-top" alt="Featured image for {{ post.data.title }}">
+        <img src=".{{ post.data.featured }}" class="card-img-top" alt="Featured image for {{ post.data.title }}">
       {% endif %}
       <div class="card-body">
         <h5 class="card-title">
-          <a href="{{ post.url }}" class="stretched-link text-decoration-none">{{ post.data.title }}</a>
+          <a href=".{{ post.url }}" class="stretched-link text-decoration-none">{{ post.data.title }}</a>
         </h5>
         <p class="card-text"><small class="text-muted">{{ post.date | readableDate }}</small></p>
       </div>
