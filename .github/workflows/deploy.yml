@@ -19,8 +19,7 @@ jobs:
       - run: npm run build
 
       - name: Deploy to GitHub Pages
-        run: |
-          cp -r _site/* _site
+
       
       - name: Commit built site
         run: |
