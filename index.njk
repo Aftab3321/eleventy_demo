@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: "Home"
+---
+
+<h2 class="mb-4">Latest Posts</h2>
+
+<div class="row">
+{% for post in collections.posts %}
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      {% if post.data.featured %}
+        <img src="{{ post.data.featured }}" class="card-img-top" alt="Featured image for {{ post.data.title }}">
+      {% endif %}
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="{{ post.url }}" class="stretched-link text-decoration-none">{{ post.data.title }}</a>
+        </h5>
+        <p class="card-text"><small class="text-muted">{{ post.date | readableDate }}</small></p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
